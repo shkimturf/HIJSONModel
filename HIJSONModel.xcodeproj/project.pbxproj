@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1EE04D001D1AFD63003F6EBE /* HIJSONModel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1EE04CFF1D1AFD63003F6EBE /* HIJSONModel.h */; };
-		1EE04D021D1AFD63003F6EBE /* HIJSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE04D011D1AFD63003F6EBE /* HIJSONModel.m */; };
+		1EE04D131D1AFD97003F6EBE /* HIObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE04D091D1AFD97003F6EBE /* HIObject.m */; };
+		1EE04D141D1AFD97003F6EBE /* HIObjectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE04D0B1D1AFD97003F6EBE /* HIObjectManager.m */; };
+		1EE04D151D1AFD97003F6EBE /* HIObjectParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE04D0E1D1AFD97003F6EBE /* HIObjectParser.m */; };
+		1EE04D161D1AFD97003F6EBE /* HIObjectScheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE04D101D1AFD97003F6EBE /* HIObjectScheme.m */; };
+		1EE04D171D1AFD97003F6EBE /* HIObjectValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE04D121D1AFD97003F6EBE /* HIObjectValue.m */; };
+		1EE04D1A1D1AFDE8003F6EBE /* NSArray+HIDev.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE04D191D1AFDE8003F6EBE /* NSArray+HIDev.m */; };
+		1EE04D211D1AFE6C003F6EBE /* NSDictionary+HIDev.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE04D201D1AFE6C003F6EBE /* NSDictionary+HIDev.m */; };
+		1EE04D251D1B0194003F6EBE /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE04D241D1B0194003F6EBE /* TestObject.m */; };
+		1EE04D291D1B01A8003F6EBE /* Thumbnail.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE04D281D1B01A8003F6EBE /* Thumbnail.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,7 +25,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				1EE04D001D1AFD63003F6EBE /* HIJSONModel.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -26,8 +32,25 @@
 
 /* Begin PBXFileReference section */
 		1EE04CFC1D1AFD63003F6EBE /* libHIJSONModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHIJSONModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		1EE04CFF1D1AFD63003F6EBE /* HIJSONModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HIJSONModel.h; sourceTree = "<group>"; };
-		1EE04D011D1AFD63003F6EBE /* HIJSONModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HIJSONModel.m; sourceTree = "<group>"; };
+		1EE04D081D1AFD97003F6EBE /* HIObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIObject.h; sourceTree = "<group>"; };
+		1EE04D091D1AFD97003F6EBE /* HIObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HIObject.m; sourceTree = "<group>"; };
+		1EE04D0A1D1AFD97003F6EBE /* HIObjectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIObjectManager.h; sourceTree = "<group>"; };
+		1EE04D0B1D1AFD97003F6EBE /* HIObjectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HIObjectManager.m; sourceTree = "<group>"; };
+		1EE04D0C1D1AFD97003F6EBE /* HIObjectObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIObjectObserver.h; sourceTree = "<group>"; };
+		1EE04D0D1D1AFD97003F6EBE /* HIObjectParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIObjectParser.h; sourceTree = "<group>"; };
+		1EE04D0E1D1AFD97003F6EBE /* HIObjectParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HIObjectParser.m; sourceTree = "<group>"; };
+		1EE04D0F1D1AFD97003F6EBE /* HIObjectScheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIObjectScheme.h; sourceTree = "<group>"; };
+		1EE04D101D1AFD97003F6EBE /* HIObjectScheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HIObjectScheme.m; sourceTree = "<group>"; };
+		1EE04D111D1AFD97003F6EBE /* HIObjectValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIObjectValue.h; sourceTree = "<group>"; };
+		1EE04D121D1AFD97003F6EBE /* HIObjectValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HIObjectValue.m; sourceTree = "<group>"; };
+		1EE04D181D1AFDE8003F6EBE /* NSArray+HIDev.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+HIDev.h"; sourceTree = "<group>"; };
+		1EE04D191D1AFDE8003F6EBE /* NSArray+HIDev.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+HIDev.m"; sourceTree = "<group>"; };
+		1EE04D1F1D1AFE6C003F6EBE /* NSDictionary+HIDev.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+HIDev.h"; sourceTree = "<group>"; };
+		1EE04D201D1AFE6C003F6EBE /* NSDictionary+HIDev.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+HIDev.m"; sourceTree = "<group>"; };
+		1EE04D231D1B0194003F6EBE /* TestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObject.h; sourceTree = "<group>"; };
+		1EE04D241D1B0194003F6EBE /* TestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
+		1EE04D271D1B01A8003F6EBE /* Thumbnail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thumbnail.h; sourceTree = "<group>"; };
+		1EE04D281D1B01A8003F6EBE /* Thumbnail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Thumbnail.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +83,67 @@
 		1EE04CFE1D1AFD63003F6EBE /* HIJSONModel */ = {
 			isa = PBXGroup;
 			children = (
-				1EE04CFF1D1AFD63003F6EBE /* HIJSONModel.h */,
-				1EE04D011D1AFD63003F6EBE /* HIJSONModel.m */,
+				1EE04D221D1B0180003F6EBE /* test object */,
+				1EE04D1E1D1AFE24003F6EBE /* manager */,
+				1EE04D1D1D1AFE18003F6EBE /* category */,
+				1EE04D1C1D1AFE0F003F6EBE /* scheme */,
+				1EE04D1B1D1AFE07003F6EBE /* parser */,
+				1EE04D081D1AFD97003F6EBE /* HIObject.h */,
+				1EE04D091D1AFD97003F6EBE /* HIObject.m */,
 			);
 			path = HIJSONModel;
+			sourceTree = "<group>";
+		};
+		1EE04D1B1D1AFE07003F6EBE /* parser */ = {
+			isa = PBXGroup;
+			children = (
+				1EE04D0D1D1AFD97003F6EBE /* HIObjectParser.h */,
+				1EE04D0E1D1AFD97003F6EBE /* HIObjectParser.m */,
+			);
+			name = parser;
+			sourceTree = "<group>";
+		};
+		1EE04D1C1D1AFE0F003F6EBE /* scheme */ = {
+			isa = PBXGroup;
+			children = (
+				1EE04D0F1D1AFD97003F6EBE /* HIObjectScheme.h */,
+				1EE04D101D1AFD97003F6EBE /* HIObjectScheme.m */,
+				1EE04D111D1AFD97003F6EBE /* HIObjectValue.h */,
+				1EE04D121D1AFD97003F6EBE /* HIObjectValue.m */,
+			);
+			name = scheme;
+			sourceTree = "<group>";
+		};
+		1EE04D1D1D1AFE18003F6EBE /* category */ = {
+			isa = PBXGroup;
+			children = (
+				1EE04D1F1D1AFE6C003F6EBE /* NSDictionary+HIDev.h */,
+				1EE04D201D1AFE6C003F6EBE /* NSDictionary+HIDev.m */,
+				1EE04D181D1AFDE8003F6EBE /* NSArray+HIDev.h */,
+				1EE04D191D1AFDE8003F6EBE /* NSArray+HIDev.m */,
+			);
+			name = category;
+			sourceTree = "<group>";
+		};
+		1EE04D1E1D1AFE24003F6EBE /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				1EE04D0A1D1AFD97003F6EBE /* HIObjectManager.h */,
+				1EE04D0B1D1AFD97003F6EBE /* HIObjectManager.m */,
+				1EE04D0C1D1AFD97003F6EBE /* HIObjectObserver.h */,
+			);
+			name = manager;
+			sourceTree = "<group>";
+		};
+		1EE04D221D1B0180003F6EBE /* test object */ = {
+			isa = PBXGroup;
+			children = (
+				1EE04D231D1B0194003F6EBE /* TestObject.h */,
+				1EE04D241D1B0194003F6EBE /* TestObject.m */,
+				1EE04D271D1B01A8003F6EBE /* Thumbnail.h */,
+				1EE04D281D1B01A8003F6EBE /* Thumbnail.m */,
+			);
+			name = "test object";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,7 +202,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EE04D021D1AFD63003F6EBE /* HIJSONModel.m in Sources */,
+				1EE04D211D1AFE6C003F6EBE /* NSDictionary+HIDev.m in Sources */,
+				1EE04D151D1AFD97003F6EBE /* HIObjectParser.m in Sources */,
+				1EE04D171D1AFD97003F6EBE /* HIObjectValue.m in Sources */,
+				1EE04D1A1D1AFDE8003F6EBE /* NSArray+HIDev.m in Sources */,
+				1EE04D131D1AFD97003F6EBE /* HIObject.m in Sources */,
+				1EE04D291D1B01A8003F6EBE /* Thumbnail.m in Sources */,
+				1EE04D141D1AFD97003F6EBE /* HIObjectManager.m in Sources */,
+				1EE04D251D1B0194003F6EBE /* TestObject.m in Sources */,
+				1EE04D161D1AFD97003F6EBE /* HIObjectScheme.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

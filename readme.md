@@ -1,6 +1,6 @@
 # HIJSONModel
 
-Base model to use objective-c project to encode or decode from JSON server response.
+Basic model to use objective-c project to encode or decode from JSON server response.
 It supports to create objective-c class from server response.
 
 ## Environments
@@ -16,8 +16,8 @@ Just import **HIJSONModel** source files to your project.
 ### HIObject
 
 * Save the **decoded** data from server.
-* snapshot means **encoded** object to send server.
-* id is used to identify each object. 
+* **snapshot** means **encoded** object to send server.
+* **id** is used to identify each object. 
 
 
 ### HIObjectValue
@@ -57,7 +57,7 @@ Just import **HIJSONModel** source files to your project.
 
 ### Object Example
 
-Suppose to server response scheme is like below.
+Suppose server response has below scheme.
 
 ```
     {
@@ -119,7 +119,7 @@ Then, you can create objective-c class like below.
     }
 ```
 
-It will create TestObject which has some properties(id, title, description, publishedAt, thumbnails)
+It will create TestObject which has some properties(id, title, description, publishedAt, thumbnails).
 **thumbnails** will create NSArray contains Thumbnail class instances when create TestObject.
 **publishedAt** will create NSDate instance.
 
@@ -135,7 +135,7 @@ Object caching tool class. Some instance conforms **HIObjectObserver** can obser
 
 ### Object Observer
 
-If some instance register as observer on HIObjectManager, they can receive change delegates.
+If the instance regists as an observer on HIObjectManager, it can receive change callback.
 
 ``` objc
 - (void)objectManager:(HIObjectManager*)objectManager onObjectUpdated:(HIObject*)object;
